@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .green {
+        background-color: green;
+        height: 200px;
+        width: 200px;
+      }
+      .bg-img {
+        background-image: url("./image1.jpg");
+        background-color: red;
+        height: 400px;
+        width: 800px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .gradient {
+        height: 200px;
+        width: auto;
+        background: url("image1.jpg") no-repeat,
+          linear-gradient(to right, #004ff9, #000000);
+        background-blend-mode: multiply;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Background Property</h1>
+    <h4>Background Color</h4>
+    <div class="green"></div>
+    <h4>Background Image</h4>
+    <div class="bg-img">Writing some text</div>
+    <h4>Linear gradient Function</h4>
+    <div class="gradient"></div>
+  </body>
+</html>
