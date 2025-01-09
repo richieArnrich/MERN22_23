@@ -78,6 +78,8 @@ body {
 }
 .image-div > .top > .top-1 {
   display: flex;
+  border: 1px solid black;
+  padding: 5px;
 }
 .image-div > .top > .top-1 > .circle {
   height: 10px;
@@ -85,4 +87,20 @@ body {
   background-color: white;
   border-radius: 5px;
   margin: 2px;
+}
+.image-div > .top > .top-2 {
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+.image-div > .top > .top-3 {
+  background-color: rgb(203, 203, 146);
+}
+.image-div > .middle {
+  height: 50%;
+  /* background-image: url("../images/clothing-1.avif"); */
+  /* background-position: center;
+  background-size: cover; */
+  background: url("../images/clothing-1.avif"),
+    linear-gradient(to left, lightgray, darkgray, black);
+  background-blend-mode: luminosity;
 }
