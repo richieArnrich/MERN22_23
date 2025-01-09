@@ -1,0 +1,29 @@
+<!-- sticky position makes an element behave as a relative element until a offset value is reached
+ post which it behaves as a fixed element -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .sticky-pos {
+        margin-top: 100px;
+        background-color: yellow;
+        position: sticky;
+        top: 40px;
+      }
+      p {
+        padding-bottom: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sticky-pos">I am sticky</div>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, maxime
+      suscipit itaque in sequi numquam omnis? Aperiam nesciunt, praesentium esse
+      fugit odio doloremque. Est doloremque sapiente quam veritatis illo? Sit.
+    </p>
+  </body>
+</html>

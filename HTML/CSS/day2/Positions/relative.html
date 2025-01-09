@@ -1,0 +1,34 @@
+<!-- Relative postion:
+ It behaves similar to static but offset properties are applicable
+ It remains within the flow of the document.
+  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .relative-pos {
+        height: 200px;
+        width: 200px;
+        background-color: purple;
+        position: relative;
+        top: 150px;
+        left: 150px;
+      }
+      p {
+        padding-bottom: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="relative-pos">I am relative</div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+      recusandae molestias beatae nesciunt. Deserunt beatae eveniet perspiciatis
+      alias ratione ipsa, cumque sit dolorum quod facere ab odio ipsam delectus
+      quas!
+    </p>
+  </body>
+</html>

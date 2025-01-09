@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .navbar {
+        background-color: darkblue;
+        color: white;
+        font-size: 1.56rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .brand {
+        padding: 5px;
+      }
+      .nav-links > a {
+        /* child selector */
+        color: white;
+        font-weight: 100;
+        text-decoration: none;
+        padding: 5px;
+        margin: 5px;
+      }
+      /* pseudo class: are stylings which are applied for a particular state of the element */
+      .nav-links > a:hover {
+        background-color: lightblue;
+        border-radius: 5px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="brand">My Brand</div>
+      <div class="nav-links">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+      </div>
+    </div>
+  </body>
+</html>
