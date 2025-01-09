@@ -1,6 +1,37 @@
 .navbar {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-brand {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+  align-items: center;
+}
+.brand {
+  font-size: 1.5rem;
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.language {
+  display: flex;
+  align-items: center;
 }
 #lang-img {
-  height: 2rem;
+  height: 1.2rem;
+}
+#lang-text {
+  font-weight: 700;
+  padding-left: 10px;
+  font-family: "Poppins", serif;
+}
+.nav-items {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+}
+.nav-links > select {
+  border: none;
 }
