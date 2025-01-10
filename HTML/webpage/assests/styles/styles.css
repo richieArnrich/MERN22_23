@@ -72,9 +72,9 @@ body {
   padding: 10px;
 }
 .image-div {
-  background-color: red;
-  height: 18rem;
-  width: 18rem;
+  border: 1px solid black;
+  height: 23rem;
+  width: 20rem;
 }
 .image-div > .top > .top-1 {
   display: flex;
@@ -85,11 +85,12 @@ body {
   height: 10px;
   width: 10px;
   background-color: white;
+  border: 1px solid black;
   border-radius: 5px;
   margin: 2px;
 }
 .image-div > .top > .top-2 {
-  border-bottom: 1px solid black;
+  border: 1px solid black;
   padding: 5px;
 }
 .image-div > .top > .top-3 {
@@ -97,10 +98,20 @@ body {
 }
 .image-div > .middle {
   height: 50%;
-  /* background-image: url("../images/clothing-1.avif"); */
-  /* background-position: center;
-  background-size: cover; */
-  background: url("../images/clothing-1.avif"),
-    linear-gradient(to left, lightgray, darkgray, black);
-  background-blend-mode: luminosity;
+  background-image: linear-gradient(
+      to left,
+      rgba(189, 195, 199, 0.5),
+      rgba(44, 62, 80, 0.5)
+    ),
+    url("../images//clothing-1.avif");
+  background-position: center;
+  background-size: cover;
+}
+.bottom-1 {
+  height: 15%;
+  background-color: beige;
+}
+.bottom-2 {
+  height: 15%;
+  background-color: #fffff0;
 }
