@@ -70,6 +70,8 @@ body {
 /* main section end */
 .images {
   padding: 10px;
+  display: flex;
+  justify-content: space-around;
 }
 .image-div {
   border: 1px solid black;
