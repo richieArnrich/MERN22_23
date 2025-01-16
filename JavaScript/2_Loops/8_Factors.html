@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Write a program to find the number of factors of a given number</h1>
+    <p>
+      Input : 6 <br />
+      Output : 1 2 3 6 <br />
+      Input: 8 Output: 1 2 4 8
+    </p>
+    <script>
+      let num = 6;
+      let count = 0;
+      for (let i = 1; i <= num; i++) {
+        if (num % i === 0) {
+          document.write(i + "<br>");
+          count++;
+        }
+      }
+      document.write("No of factors: " + count + "<br>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Reverse a number</h1>
+    <script>
+      /*
+        1. Take last digit
+        2. Add last digit to reverse variable
+        3. Remove last digit from number
+        4. Repeat steps 1-3 until number is 0
+        */
+      let num = 121;
+      let org = num;
+      let reverse = 0;
+      while (num != 0) {
+        let lastDigit = num % 10;
+        reverse = reverse * 10 + lastDigit;
+        num = parseInt(num / 10);
+      }
+      document.write("Original Number: " + num + "<br>");
+      document.write("Reverse Number: " + reverse + "<br>");
+      if (org === reverse) {
+        document.write(org + " The number is a palindrome");
+      } else {
+        document.write(org + " The number is not a palindrome");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+Loop: A set of statements executed multiple times
+In Js there three basic loops:
+1. While loop
+2. Do while loop
+3. For loop
+--------------------------------------------
+### While Loop
+    Executes a block of statement until a given condition becomes false
+
+    Syntax: 
+    initialisation
+    while(condition){
+        //code to be executed
+        update (increment/decrement)
+    }
+
+    Working of while loop:
+    1. The initialisation statement is executed first.
+    2. The condition is checked. If it is true, the code within the while loop is executed
+    3. The update statement is executed.
+    4. The condition is checked again. If it is true, the code within the while loop is executed
+    5. Steps 3 and 4 are repeated until the condition becomes false.
+
+-------------------------------------------------------
+Questions to solve:
+1. Write a program to find factors of a given number
+2. Write a program to find the number of factors of a given number
+3. Write a program to find whether a number is prime number or not
+4. Write a program to find the even factors of a number
+5. Write a program to find the prime factors of a number
+6. Write a program to whether a number is perfect number or not
+    Perfect number means: sum of all factors = twice the given number
+    Eg : 28; the factors of 28 are 1,2,4,7,14,28
+    Whose sum is 56 i.e twice(28)
+7. Write a program to reverse a number
+    Num: 4365, output: 5634
+8. Write a program to find whether a given number is palindrome or not
+    Num: 121 output: 121
+9. Write a program to find the number of digits in a given number
+    Num : 4365 digits: 4
+10. Write a program to find the sum of all digits in a given number
+    Num : 4365, sumOfAllDigits: 18
+---------------------------------------------------------------
+### Do While Loop
+    Executes a block of statement until a given condition becomes false
+    Syntax:
+    initialisation
+    do{
+        //code to be executed
+        update (increment/decrement)
+    }while(condition);
+    
+    Working of do while loop
+    1. Initialisation takes place
+    2. The code within the do while loop is executed first.
+    3. The update statment is executed
+    4. The condition is checked. If it is true, the code within the do while loop is executed again
+    5. Steps 3 and 4 are repeated until the condition becomes false.
+---------------------------------------------------------------
+### For Loop
+    Executes a block of statement for a specified number of times
+    Syntax:
+        for(initialisation; condition; update){
+            //code to be executed
+        }
+    
+    Working Of For Loop
+    1. Initialisation takes place
+    2. The condition is checked. If it is true, the code within the for loop is executed
+    3. The update statement is executed
+    4. Steps 2 and 3 are repeated until the condition becomes false.
