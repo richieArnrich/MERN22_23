@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Conditional Statements in JavaScript</h1>
+    <p>
+      Conditional Statements are used to check for conditions and execute a
+      piece of code based on the condition
+    </p>
+    <p>Types of Condition Statements in JavaScript:</p>
+    <ol>
+      <li>If statement</li>
+      <li>If - else statement</li>
+      <li>else-if ladder (If - else statement with multiple conditions)</li>
+      <li>Switch statement</li>
+    </ol>
+
+    <script>
+      // If Statement
+      let n1 = 100;
+
+      document.write("-----------if statement-----------<br>");
+      if (n1 > 50) {
+        document.write("n1 is greater than 50" + "<br>");
+      }
+
+      //   if else statement
+      document.write("-----------if-else statement-----------<br>");
+      if (n1 > 200) {
+        document.write("n1 is greater than 200" + "<br>");
+      } else {
+        document.write("n1 is less than 200" + "<br>");
+      }
+
+      //   else if ladder
+      document.write("-----------else-if ladder-----------<br>");
+      if (n1 > 100) {
+        document.write("n1 is greater than 100" + "<br>");
+      } else if (n1 < 100) {
+        document.write("n1 is less than 100" + "<br>");
+      } else {
+        document.write("n1 is equal to 100" + "<br>");
+      }
+    </script>
+  </body>
+</html>

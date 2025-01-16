@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>We are learning JavaScript</h1>
+    <div>
+      <ol>
+        <li>
+          JavaScript is a programming language, used for client side programming
+        </li>
+        <li>It is used for creating interactive web pages</li>
+      </ol>
+    </div>
+    <!-- add javascript into html -->
+    <script>
+      // write javascript code
+      document.write("Hi I write the output on the html document" + "<br>");
+      //   alert("I am in alert box");
+      console.log("I am in console"); //mostly test the data
+
+      //   variable : used to store some data
+      //   In JS we can declare variables in 3 ways: 1. let keyword, 2.var keyword, 3.const keyword
+      let myName = "Chandra";
+      let myAge = 22;
+      let myCountry = "India";
+
+      document.write(myName + "<br>");
+      document.write(myAge + "<br>");
+      document.write(myCountry + "<br>");
+      document.write("type of data in myName: " + typeof myName + "<br>");
+      document.write("type of data in myAge: " + typeof myAge + "<br>");
+      //   check whether variable myName can be reassigned
+      //   -----------------------------------------------------------------------
+      //   let myName = "Rahul"; cannot have the same variable name again
+      var myCar = "Honda City";
+      var myBike = "Honda CBR";
+      document.write(myCar + "<br>");
+      document.write(myBike + "<br>");
+      myCar = "VW POLO";
+      myBike = "TVS Raider";
+      document.write(myCar + "<br>");
+      document.write(myBike + "<br>");
+      //   -----------------------------------------------------------------------
+      var myCar = "Audi A4";
+      document.write(myCar + "<br>");
+      //   using var keyword I can redeclare and reassign values to variables
+      const bankBalance = 1000; //bankBalance is constant and cannot be redeclared or reassigned
+      document.write(bankBalance + "<br>");
+      bankBalance = 2000;
+      document.write(bankBalance + "<br>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Find greatest of three using user input</h1>
+    <script>
+      let num1 = window.prompt("Enter number 1");
+      num1 = parseInt(num1);
+      let num2 = window.prompt("Enter number 2");
+      num2 = parseInt(num2);
+      let num3 = window.prompt("Enter number 3");
+      num3 = parseInt(num3);
+
+      if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+        alert("Invalid Input");
+      } else {
+        if (num1 > num2 && num1 > num3) {
+          document.write("Num1 is greatest" + num1 + "<br>");
+        } else if (num2 > num3) {
+          document.write("Num2 is greatest" + num2 + "<br>");
+        } else {
+          document.write("Num3 is greatest" + num3 + "<br>");
+        }
+      }
+    </script>
+  </body>
+</html>

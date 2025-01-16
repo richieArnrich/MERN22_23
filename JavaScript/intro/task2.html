@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Simple Calculator</h1>
+    <p>
+      Enter your choice: <br />
+      1: Addition <br />
+      2: Subtraction<br />
+      3: Multiplication <br />
+      4: Division
+    </p>
+    <script>
+      let option = parseInt(prompt("Enter your choice"));
+      switch (option) {
+        case 1:
+          {
+            let num1 = parseInt(prompt("Enter first number"));
+            let num2 = parseInt(prompt("Enter second number"));
+            let result = num1 + num2;
+            document.write("Addition Result: " + result + "<br>");
+          }
+          break;
+      }
+    </script>
+  </body>
+</html>
