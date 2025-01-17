@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Object in JavaScript</h1>
+    <script>
+      // Creating an object
+      let person = {
+        firstName: "Raja",
+        lastName: "Kumar",
+        age: 23,
+        profession: "student",
+      };
+
+      document.write(person + "<br>");
+      console.log(person);
+      // Accessing object properties
+      document.write("FirstName: " + person.firstName + "<br>");
+      document.write("LastName: " + person["lastName"] + "<br>");
+      document.write("Age: " + person.age + "<br>");
+      document.write("Profession: " + person.profession + "<br>");
+      document.write("<br>---------------------------------<br>");
+      //   for...in loop
+      for (let property in person) {
+        document.write(property + " = " + person[property] + "<br>");
+      }
+      document.write("<br>---------------------------------<br>");
+      person.firstName = "Anil";
+      person.lastName = "Patil";
+      document.write("FirstName: " + person.firstName + "<br>");
+      document.write("LastName: " + person.lastName + "<br>");
+      Object.freeze(person);
+      person.age = 25;
+      document.write("Age: " + person.age + "<br>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+Objects in javascript :
+    Objects are real time entities (it occupies space)
+    Objects are instances of classes
+    Objects are collections of properties and methods(functions)
+    One variable carrying multiple properties and methods(functions) can be an Object
+
+    Syntax:
+    let person = {
+        name: "John",
+        age: 25,
+        profession: "SDE",
+        country: "India",
+        state: "Karnataka"
+    }
+
+Ways to create an Object
+1. using object literal
+    A variable carrying multiple properties and methods(functions)
+    Eg: let person = {
+        name: "John",
+        age: 25,
+        profession: "SDE",
+        country: "India",
+        state: "Karnataka"
+    }
+2. using new keyword
+    let obj_name = new ClassName()
+
+3. using protypes
+4. using Object.create()
