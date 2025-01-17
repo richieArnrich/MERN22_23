@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Functions</h1>
+    <script>
+      // Function declaration
+      function myFunc() {
+        document.write("Hello, I am Richie<br>");
+      }
+
+      myFunc();
+
+      function myFunc2(name, age) {
+        document.write(`Hello, I am ${name} and I am ${age} years old<br>`);
+      }
+      myFunc2("Zara", 23);
+      myFunc2("Khan", 25);
+      myFunc2("Shiv", 27);
+
+      function param1(p1, p2 = 5) {
+        console.log(p1);
+        console.log(p2);
+      }
+      param1({ name: "Potato", type: "Veg" }, 10);
+      param1({ name: "Potato", type: "Veg" });
+    </script>
+  </body>
+</html>

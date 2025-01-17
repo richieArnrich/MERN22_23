@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // object
+      let person = {
+        firstName: "Rahul",
+        lastName: "Sharma",
+        age: 25,
+        city: "Delhi",
+      };
+      console.log(person);
+      //   add a new property country
+      person.country = "India";
+      console.log(person);
+      //   update city:
+      person.city = "Mumbai";
+      console.log(person);
+      //   Object.freeze
+      Object.freeze(person);
+      //   try to add new property
+
+      //   create a new object
+      let person2 = {
+        firstName: "Ajay",
+        lastName: "Sharma",
+        age: 25,
+        city: "Delhi",
+      };
+      //   seal object person2
+      Object.seal(person2);
+      //   try to add new property
+      //   try to update city
+
+      //   Object.entries()
+      console.log(Object.entries(person2));
+      //   Object.assign
+      let person3 = {
+        firstName: "Vijay",
+      };
+      console.log(person3);
+      Object.assign(person3, person2);
+      console.log(person3);
+      person3.firstName = "Vijay";
+      console.log(person3);
+      console.log(person2);
+
+      //   Object.keys and Object.values
+      console.log(Object.keys(person2));
+      console.log(Object.values(person2));
+    </script>
+  </body>
+</html>

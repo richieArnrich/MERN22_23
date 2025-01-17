@@ -28,3 +28,13 @@ Ways to create an Object
 
 3. using protypes
 4. using Object.create()
+------------------------------------------------------------------------
+Object methods in javascript
+1. Object.keys()
+2. Object.values()
+3. Object.entries()
+4. Object.assign()
+5. Object.create()
+6. Object.freeze()
+7. Object.seal()
+------------------------------------------------------------------------

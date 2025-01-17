@@ -1,0 +1,50 @@
+Functions are blocks of code used to perform a particular task
+Types of functions
+1. Non parameterised functions
+    They do not take in any input while being called
+        Eg:
+        function add(){
+            let a = 10;
+            let b = 20;
+            let r = a+b;
+            clg(r)
+        }
+
+        add()
+
+2. Parameterised functions
+    They take in input while being called
+    Eg:
+    function add(a,b){
+        let r = a+b;
+    }
+
+    add(10,20)
+
+3. Anonymous Functions
+    They are defined without a name
+
+    Eg: 
+    let func1 = function(){
+        console.log("Hello")
+    }
+    func1()
+
+    let func2 = function(a,b){
+        console.log(a+b)
+    }
+
+    func2(10,20)
+
+4. Arrow Functions
+    They are defined using the arrow operator
+    Eg:
+    let func1 = ()=>{
+        console.log("Hello")
+    }
+    func1()
+
+    let func2 = (a,b)=>{
+        console.log(a+b)
+    }
+    func2(10,20)

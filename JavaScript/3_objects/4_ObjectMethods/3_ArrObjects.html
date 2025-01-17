@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Array Of Objects</h1>
+    <script>
+      let arr = [1, 2, "String", 4.05, true];
+      //   console.log(arr);
+      //   console.log(arr[3]);
+      //   console.log(typeof arr);
+      //   iterate through array
+      for (let arrItems of arr) {
+        console.log(arrItems);
+      }
+      //   ---------------------------------------
+      let objArray = [
+        { name: "John", age: 25 },
+        { name: "Jane", age: 30 },
+        { name: "Bob", age: 35 },
+        { name: "Sunny", age: 35 },
+        { name: "Das", age: 35 },
+      ];
+      console.log(objArray);
+      //   for..of loop
+      for (let obj of objArray) {
+        console.log(obj);
+      }
+    </script>
+  </body>
+</html>

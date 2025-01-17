@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Object having objects</h1>
+    <script>
+      // Define an object
+      let country = {
+        name: "India",
+        capital: "New Delhi",
+        population: 1380000000,
+        cities: ["Bangalore", "Mumbai", "Delhi", "Chennai"],
+        PM: {
+          name: "Narendra Modi",
+          party: "BJP",
+          age: 70,
+        },
+      };
+      // Accessing nested object
+      console.log(country.PM.name);
+      console.log(country.PM.party);
+      console.log(country.PM.age);
+      console.log(country.cities[0]);
+      console.log(country.cities[3]);
+    </script>
+  </body>
+</html>
