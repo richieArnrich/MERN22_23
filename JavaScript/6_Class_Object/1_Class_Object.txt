@@ -1,0 +1,17 @@
+Class:
+ *Blueprint of an object
+ *It provides the states and behavior of an object
+
+ Example: 
+ Car :
+ * States: color, model, year, manufacturer
+ * Behavior: start, stop, accelerate, brake
+
+Object:
+    *It is an instance of a Class
+    *It carries the properties given by the class
+
+    Example:
+    Car:
+    *Objects for car -->
+    MS swift, VW POLO, BMW M5

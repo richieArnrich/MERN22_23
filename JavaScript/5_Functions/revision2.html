@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // functions
+      function myFunc1() {
+        // function declaration with no parameters
+        document.write("Hello MyFunc1()<br>");
+      }
+
+      myFunc1(); //function call statement
+
+      //   function declaration with parameters
+      function myFunc2(name, age) {
+        document.write("Hello my func2()<br>");
+        document.write(`Name is ${name} and age is ${age} <br>`); //template literal
+      }
+
+      myFunc2("Kumar", 33);
+      console.log(myFunc2);
+      //   anonymous functions
+      let anonFunc1 = function () {
+        document.write("Hello anonymous function<br>");
+      };
+      anonFunc1();
+      
+      //   parameterised annonymous func
+      let anonFunc2 = function (name, age) {
+        document.write(`Name is ${name} and age is ${age} <br>`); //template literal
+      };
+
+      anonFunc2("Daan", 12);
+
+      //   arrow function
+      let arrowFunc1 = () => {
+        document.write("Hello arrow function<br>");
+      };
+      arrowFunc1();
+
+      //   parameterised arrow function
+      let arrowFunc2 = (name, age) => {
+        document.write(`Name is ${name} and age is ${age} <br>`);
+      };
+      arrowFunc2("Ricky", 11);
+    </script>
+  </body>
+</html>
