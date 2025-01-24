@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>BOM in JavaScript</h1>
+    <script>
+      console.log(window);
+      console.log(window.location);
+      console.log(window.screen);
+
+      if (window.screen.height > 600) {
+        alert("Yeahhh I am greater than 600");
+        window.location.href = "https://m.youtube.com/";
+      } else {
+        alert("Nope I am less than 600");
+      }
+    </script>
+  </body>
+</html>
