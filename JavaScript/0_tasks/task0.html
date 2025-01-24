@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      li {
+        list-style: none;
+      }
+      li::before {
+        content: "";
+        background-image: url("./flag1.avif");
+        display: inline-block;
+        height: 0.5rem;
+        width: 0.5rem;
+        background-size: cover;
+        background-position: center;
+      }
+      li:nth-child(odd) {
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Mango</li>
+      <li>Orange</li>
+      <li>Grapes</li>
+      <li>Potato</li>
+      <li>Flower</li>
+    </ul>
+  </body>
+</html>

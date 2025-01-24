@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Lexical Scope In JS</h1>
+    <script>
+      function func1() {
+        let city1 = "Bangalore";
+        document.write(`${city1} in func1()<br>`);
+
+        //closure
+        function func2() {
+          let city2 = "Mumbai";
+          document.write(`${city2} in func2()<br>`);
+          document.write(`${city1} in func2()<br>`);
+        }
+        func2();
+      }
+
+      func1();
+    </script>
+  </body>
+</html>

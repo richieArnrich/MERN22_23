@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Closure in JS</h1>
+    <script>
+      function example(a) {
+        return a + 5;
+      }
+
+      let eg = example(15);
+
+      function add(a) {
+        document.write(`a in outer function : ${a} <br>`);
+        return function (b) {
+          document.write(`a in inner function : ${a} <br>`);
+          document.write(`b in inner function : ${b} <br>`);
+          document.write(`Add result ${a + b}`);
+        };
+      }
+
+      let call1 = add(10);
+      console.log(call1);
+      call1(5);
+    </script>
+  </body>
+</html>

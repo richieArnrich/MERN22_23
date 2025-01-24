@@ -1,0 +1,15 @@
+Scope of a variable:
+The scope of a variable is the region of the program 
+where the variable is defined and can be accessed.
+
+Types of scope in javascript
+1. Global scope: Variables declared outside of any function or block are in global scope. They can
+be accessed from anywhere in the program.
+2. Local scope: Variables declared inside a function or block are in local scope. They can only
+be accessed within that function or block.
+3. Block scope: Variables declared inside a block (like if, else, for, while)
+are in block scope. They can only be accessed within that block.
+
+Closure:
+A closure is a function that has access to its own scope and the scope of its outer functions,
+even when the outer function has returned.

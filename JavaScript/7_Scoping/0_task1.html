@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- function func1 return a inner function
+     and the inner function should return a final result 
+    -->
+    <!-- func1() -> adds two numbers
+    innerfunc -> addresult - newNumber -->
+    <script>
+      function outerFunc(a, b) {
+        let r = a + b;
+        return function (c) {
+          let r2 = r - c;
+          document.write(`Final result is ${r2}<br>`);
+          return function (d) {
+            let r3 = r2 * d;
+            document.write(`Final result2 is ${r3}<br>`);
+          };
+        };
+      }
+
+      let f1 = outerFunc(15, 13);
+      let f3 = f1(2);
+      f3(4);
+    </script>
+  </body>
+</html>
