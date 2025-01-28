@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div1 {
+        width: 400px;
+        height: 400px;
+        background-color: violet;
+      }
+      .div1 > .inner-div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+      .div1 .inner-div2 {
+        width: 75px;
+        height: 75px;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>DOM tree</h1>
+    <div class="div1">
+      I am div1
+      <div class="inner-div">
+        I am inner-div
+        <div class="inner-div2">
+          I am inner-div2
+          <div class="inner-div">I am inner-inner-div</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

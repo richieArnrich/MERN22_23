@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="i1">Hello I am a heading</h1>
+    <p id="i2">I am a paragraph</p>
+    <p id="i3">I am a paragraph 2</p>
+    <script>
+      let h1Ele = document.getElementById("i1");
+      console.log(h1Ele);
+      console.log(h1Ele.innerHTML);
+      h1Ele.innerHTML = "I am new text added by js";
+      console.log(h1Ele.innerHTML);
+      let para = document.getElementById("i2");
+      para.innerHTML = "Hello this is <b>JavaScript</b>";
+      let para2 = document.getElementById("i3");
+      para2.innerText = "Hello this is <b>JavaScript</b>";
+    </script>
+  </body>
+</html>
