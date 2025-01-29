@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="names"></div>
+    <script>
+      let names = ["John", "Mary", "Jane", "Bob"];
+      let nameDiv = document.getElementById("names");
+      names.map((name) => {
+        let nameElement = document.createElement("h2");
+        nameElement.innerHTML = name;
+        nameDiv.appendChild(nameElement);
+      });
+    </script>
+  </body>
+</html>

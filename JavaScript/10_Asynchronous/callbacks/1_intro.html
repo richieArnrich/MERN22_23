@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Callback Functions</h1>
+    <p>
+      A function passed as a parameter to another function is called as callback
+      <br />
+      The function which accepts another function as a callback is called as
+      Higher Order Function (HOF) <br />
+      <b>Syntax to call callback function:</b>
+      <br />
+      <code>higherOrderfunction_name(callback_function)</code>
+    </p>
+    <script>
+      // Define a higher order function
+      function higherOrderFunction(cb) {
+        document.write("I am higher order function<br>");
+        cb();
+      }
+
+      function f2() {
+        // callback function
+        document.write("I am f2 function<br>");
+      }
+
+      higherOrderFunction(f2);
+    </script>
+  </body>
+</html>

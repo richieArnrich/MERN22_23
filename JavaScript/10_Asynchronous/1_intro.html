@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Synchronous Programs</h1>
+    <p>
+      Synchronous Programs are executed line by line and one function call after
+      the other. <br />
+      Example if fun1() is called before func2() , func1() completes first and
+      then func2() is executed <br />
+    </p>
+    <script>
+      function func1() {
+        document.write("Fun1() starts.. <br>");
+        document.write("Func1 executing......<br>");
+        document.write("Func1 ends<br>");
+      }
+      function func2() {
+        document.write("Fun2() starts.. <br>");
+        document.write("Fun2 executing......<br>");
+        document.write("Fun2 ends<br>");
+      }
+
+      func1();
+      func2();
+    </script>
+  </body>
+</html>

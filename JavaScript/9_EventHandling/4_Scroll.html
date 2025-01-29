@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .navbar {
+        background-color: lightgreen;
+        font-size: 25px;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        top: 0;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+      }
+      .navbar.scrolled {
+        background-color: #333;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        color: white;
+      }
+      a.scrolled {
+        color: white;
+      }
+      .content {
+        position: relative;
+        top: 10px;
+        height: 120vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar" id="navbar">
+      <div class="brand">My Brand</div>
+      <div class="nav-links">
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+      </div>
+    </div>
+    <div class="content">
+      <h1>Scroll to see the navbar effect</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+        odio. Praesent libero. Sed cursus ante dapibus diam...
+      </p>
+    </div>
+    <script src="./4_Scroll.js"></script>
+  </body>
+</html>

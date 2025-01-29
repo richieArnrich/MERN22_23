@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Asynchronous Programming</h1>
+    <p>
+      Asynchronous Programming is the phenomenon where two functions are
+      executed parallely <br />
+      The second function call will not wait for the completion of the previous
+      function call <br />
+    </p>
+    <script>
+      // Function 1
+      function func1() {
+        console.log("Function 1 started....<br>");
+        setTimeout(() => {
+          console.log("Func1 is executing.. this takes 2 seconds..<br>");
+          console.log("Func1 ends..<br>");
+        }, 3000);
+      }
+
+      function func2() {
+        console.log("Function 2 started....<br>");
+        console.log("Function 2 takes no time to complete....<br>");
+        console.log("Function 2 ends..<br>");
+      }
+      function func3() {
+        console.log("Function 3 started....<br>");
+        console.log("Function 3 takes no time to complete....<br>");
+        console.log("Function 3 ends..<br>");
+      }
+      func1();
+      func2();
+      func3();
+    </script>
+  </body>
+</html>

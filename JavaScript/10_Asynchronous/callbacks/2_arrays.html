@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let names = ["Richie", "Arun", "Akash", "John", "Rohith"];
+      console.log(names);
+      console.log(names[2]);
+      console.log(names[3]);
+      console.log(names[4]);
+      for (let i = 0; i <= names.length - 1; i++) {
+        document.write(names[i] + "<br>");
+      }
+      document.write("<br>-------------------------<br>");
+      for (let name of names) {
+        document.write(name + "<br>");
+      }
+
+      let nos = [2, 4, 6, 8, 10];
+      //   new array which will 4,8,12,16,20
+      //   map()
+
+      let newNos = nos.map((num) => {
+        return num * 2;
+      });
+      console.log(newNos);
+    </script>
+  </body>
+</html>
