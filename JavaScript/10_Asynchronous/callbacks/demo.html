@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let nus = [1, 2, 10, 50, 23, 34, 45, 56, 2, 2, 2];
+      //   find whether number 2 is present or not
+      //   for (let x of nus) {
+      //     if (x === 2) {
+      //       console.log("Number 2 is present");
+      //     }
+      //   }
+      //  function which checks for 2
+      function checkFor2(number) {
+        if (number === 2) {
+          return number;
+        }
+      }
+      let r = nus.find(checkFor2);
+      console.log(r);
+    </script>
+  </body>
+</html>
