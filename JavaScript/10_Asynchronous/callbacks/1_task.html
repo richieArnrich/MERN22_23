@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Search For users</h1>
+    <input type="text" id="username" name="username" />
+    <input type="submit" onclick="handleSearch()" />
+    <div id="user-result"></div>
+    <script>
+      const users = [
+        { id: "john_01", name: "John", age: 25 },
+        { id: "amith_01", name: "Amith", age: 25 },
+        { id: "sarah_01", name: "Sarah", age: 25 },
+        { id: "athul_01", name: "Athul", age: 25 },
+      ];
+      let userDiv = document.getElementById("user-result");
+      function handleSearch() {
+        userDiv.innerHTML = "Please wait...";
+        setTimeout(() => {
+          const username = document.getElementById("username").value;
+          const userResult = users.find((user) => {
+            if (user.name === username) {
+              return user;
+            }
+          });
+          console.log(userResult);
+          if (userResult) {
+            displayUser(userResult);
+          } else {
+            userDiv.innerHTML = "User not found";
+          }
+        }, 1000);
+        event.preventDefault();
+      }
+
+      function displayUser(user) {
+        userDiv.innerHTML = "";
+        for (let prop in user) {
+          let para = document.createElement("p");
+          para.innerHTML = `${prop}: ${user[prop]}`;
+          userDiv.appendChild(para);
+        }
+      }
+    </script>
+  </body>
+</html>
