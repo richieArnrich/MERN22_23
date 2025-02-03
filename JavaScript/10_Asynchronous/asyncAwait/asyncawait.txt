@@ -1,0 +1,12 @@
+Async and await in JS
+async/await is a syntax sugar for promises. It allows you to write asynchronous code that looks and
+feels like synchronous code.
+
+Async keyword:
+The async keyword is used to declare a function that returns a promise. 
+When a function is declared as async, it returns a promise automatically.
+
+Await keyword:
+The await keyword is used to pause the execution of the code until the promise is resolved or rejected.
+It expects a promise to be resolved always.
+It is always used in async functions
