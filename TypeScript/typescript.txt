@@ -1,0 +1,13 @@
+TypeScript
+------------------------------------------------------
+What is TypeScript?
+=====================================
+TypeScript is a superset oj JS programming language
+It is designed to help developers catch errors early and improve code maintainability
+-------------------------------------
+Advantage of TypeScript:
+-------------------------------------
+1.  Static typing: We cannot change the datatype of the variable once assigned
+2.  Better code completion: It provides better code completion as it knows the type of the variable
+3.  Better error detection: It detects errors at compile time itself
+4.  Better code maintainability: It improves code readability and maintainability
