@@ -1,0 +1,55 @@
+What is react?
+React is a front-end library used to build interactive webpages
+It is a JavaScript library for building user interfaces
+-----------------------
+Advantages of react
+*   Easy to learn and use
+*   Fast and efficient
+*   Large community of developers
+*   Supports server-side rendering
+*   Uses components which makes it easy to maintain code
+-----------------------
+Disadvantages of react
+*   Steeper learning curve for complex applications
+*   Not suitable for complex state management
+-----------------------
+----------------------------------------------------------------
+What are components?
+Components are pieces of code that are used to perform a task and represent a unit of the UI 
+They can be reused throughout the application
+-----------------------
+### React Components
+Type of components:
+*   Functional components
+    They are JavaScript/Typescript Functions which return 1 html element at a time
+    They get access to objects called as props
+    AKA stateless components
+
+*   Class components
+    They are JavaScript/Typescript classes which has a render() which returns 1 html element at a time
+    They get access to props and state
+    AKA stateful components
+
+What is JSX?
+It stands for JavaScript and XML
+JSX is a syntax extension for JavaScript that allows you to write HTML in your JavaScript files. It
+is a way to write HTML in your JavaScript code. It is not a separate language, but rather
+a syntax extension for JavaScript. It is used to create React elements and is a key part of the
+React library.
+XML: Xtensible Markup language
+
+-----------------------
+###Props and State in react
+-----------------------------
+Props:
+*   Props are short for properties
+*   They are immutable objects
+*   Data passed down from parent component to child component is called as props
+
+State:
+*   State is an object that stores data that can change
+*   They are mutable objects
+*   Data is stored in the component itself and can be changed at any time
+*   State is used to store data that can change over time, such as user input or API data
+*   Initialy state was only accessible inside class components but post React 16 version,
+state is also accessible in functional components using hooks
