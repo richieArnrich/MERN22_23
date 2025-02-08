@@ -1,6 +1,7 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Main from "./components/Main";
+import BootrstrapStyle1 from "./concepts/BootrstrapStyle1";
 import Event1 from "./concepts/Event1";
 import Event2 from "./concepts/Event2";
 import { Event3 } from "./concepts/Event3";
@@ -11,6 +12,8 @@ import MyClass from "./concepts/MyClass";
 import MyClass2 from "./concepts/MyClass2";
 import MyFunc from "./concepts/MyFunc";
 import MyFunc2 from "./concepts/MyFunc2";
+import Style1 from "./concepts/Style1";
+import TaskEvent1 from "./concepts/TaskEvent1";
 
 function App() {
   return (
@@ -27,7 +30,10 @@ function App() {
       <Event3 />
       <Event4 /> */}
       {/* <Event5 /> */}
-      <Event6 />
+      {/* <Event6 /> */}
+      {/* <TaskEvent1 /> */}
+      <Style1 />
+      <BootrstrapStyle1 />
     </>
   );
 }

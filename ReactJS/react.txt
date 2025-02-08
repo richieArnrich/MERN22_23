@@ -53,3 +53,48 @@ State:
 *   State is used to store data that can change over time, such as user input or API data
 *   Initialy state was only accessible inside class components but post React 16 version,
 state is also accessible in functional components using hooks
+-------------------------------------------------------------------------
+### Parent child relationship
+---------------------------
+    Parent component is the component that renders the child component (calls the child component)
+    Child component is the component that is rendered by the parent component (is called by the parent component)
+    ---------------------------
+    Data transfer between parent to child
+    ---------------------------
+    Data is passed from parent to child using props
+    ---------------------------
+    Data transfer from child to parent
+    ---------------------------
+    Data is passed from child to parent using callback functions
+
+---------------------------
+### Data Binding in react
+---------------------------
+    Data binding is the process of linking the data in the component to the UI
+    It is a two-way process
+    1.  Data binding from component to UI (1 way databinding)
+    2.  Data binding from UI to component (2 way databinding)
+    ---------------------------
+    1 way data binding
+    ---------------------------
+    *   When data is changed in the component, the UI is updated automatically
+    *   This is the default behavior in React
+    --------------------------
+    2 way data binding
+    ---------------------------
+    *   When data is changed in the UI, the component is updated automatically
+    *   This is achieved using state and event handlers in React    
+--------------------------------------------------
+### UseContext hook
+---------------------------
+    *   useContext is a hook that allows you to access the context of the component
+    *   Steps to create context
+        Step 1 : create context using React.createContext() (Eg: let UserContext = React.createContext())
+        Step 2 : wrap the context in a provider component (Eg: UserContext.provider)
+        Step 3 : pass the context to the provider component (Eg: 
+        <UserContext.provider value={someValue}>
+            {children}
+        <UserContext.provider>
+        Step 4 : use the context in the component (Eg: const user = useContext(UserContext))
+        Step 5 : Wrap the utilising component with the provider
+        --------------------------------------------------
