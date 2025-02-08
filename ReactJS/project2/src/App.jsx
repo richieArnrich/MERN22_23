@@ -1,3 +1,4 @@
+import ApiCall from "./concepts/ApiCall";
 import ContextUsage from "./concepts/ContextUsage";
 import { UserProvider } from "./concepts/MyContext";
 import ParentComp from "./concepts/ParentComp";
@@ -10,11 +11,12 @@ function App() {
   };
   return (
     <>
-      <UserProvider>
-        {/* <ParentComp user={obj} /> */}
-        {/* <ContextUsage /> */}
-        <UpdateState />
-      </UserProvider>
+      {/* <UserProvider> */}
+      {/* <ParentComp user={obj} /> */}
+      {/* <ContextUsage /> */}
+      {/* <UpdateState /> */}
+      {/* </UserProvider> */}
+      <ApiCall />
     </>
   );
 }

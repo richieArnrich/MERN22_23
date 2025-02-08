@@ -92,9 +92,75 @@ state is also accessible in functional components using hooks
         Step 1 : create context using React.createContext() (Eg: let UserContext = React.createContext())
         Step 2 : wrap the context in a provider component (Eg: UserContext.provider)
         Step 3 : pass the context to the provider component (Eg: 
-        <UserContext.provider value={someValue}>
+        <UserContext provider value={someValue}>
             {children}
-        <UserContext.provider>
+        <UserContext provider>
         Step 4 : use the context in the component (Eg: const user = useContext(UserContext))
         Step 5 : Wrap the utilising component with the provider
         --------------------------------------------------
+-----------------------------------------------------------------------------------------
+### Virtual DOM in React
+-----------------------------------------------------------------------------------------
+*   Virtual DOM is a lightweight in-memory representation of the real DOM
+*   It is abstraction of real-dom
+*   When the state of the component changes, the virtual DOM is updated
+*   The virtual DOM is then compared to the real DOM
+*   If there are any differences, the real DOM is updated
+*   This process is called reconciliation
+*   Virtual DOM is used to improve the performance of the application
+*   It reduces the number of DOM mutations
+*   It also makes the application more predictable and easier to debug
+--------------------------------------------------
+Diffing and reconciliation in VDOM
+--------------------------------------------------
+*   Diffing is the process of comparing the virtual DOM to the real DOM
+*   Reconciliation is the process of updating the real DOM based on the differences found 
+    during diffing
+
+----------------------------------------------------------------------------------------
+### Life Cycle Methods in React
+----------------------------------------------------------------------------------------
+*   Life cycle methods are methods that are called at different stages of a component's life cycle
+*   There are several life cycle methods in React
+*   The most commonly used life cycle methods are
+    1. constructor()
+    2. getDerivedStateFromProps()
+    3. shouldComponentUpdate()
+    4. render()
+    5. componentDidMount()
+    6. componentWillUnmount()
+    7. getSnapshotBeforeUpdate()
+    8. componentDidUpdate()
+    9. static getDerivedStateFromError(error) 
+    fallback ui
+
+Phases of a component's lifecycle in React
+--------------------------------------------------
+1. Initialisation:
+*  Initialising the state or the props
+
+2.  Mounting:
+*   The component is rendered to the DOM
+*   The component is mounted to the DOM
+*   The component is visible to the user
+*   The component is rendered to the DOM for the first time
+*   When mounting is completed the componentDidMount() is called, which recalls the render() again
+
+3. Updation:
+*   The component's state or props change
+*   The component is updated
+*   The component is re-rendered to the DOM
+
+4. Unmounting:
+*   The component is removed from the DOM
+*   The component is unmounted from the DOM
+---------------------------------------------------------
+### Making API calls in react:
+*   Using componentDidMount():
+*   This method is called after the component has been rendered to the DOM
+*   It is used to make API calls after the component has been rendered
+*   It is used to fetch data from the server after the component has been rendered
+*   We can make asynchrounous timer function calls in this function
+*   When a component makes an API or a timer function call, it undergoes sideEffect
+*   SideEffect is a function that has a side effect, i.e., it changes the state
+*   When a component undergoes sideEffect, it is re-rendered to the DOM
