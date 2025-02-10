@@ -164,3 +164,14 @@ Phases of a component's lifecycle in React
 *   When a component makes an API or a timer function call, it undergoes sideEffect
 *   SideEffect is a function that has a side effect, i.e., it changes the state
 *   When a component undergoes sideEffect, it is re-rendered to the DOM
+--------------------------------------------------------------
+UseEffect hook:
+*   The useEffect hook is used to handle side effects in functional components
+*   It is used to make API calls, timer function calls, and other side effects
+*   It is used to fetch data from the server
+*   It is used to update the state of the component
+*   It is used to update the DOM
+Syntax:
+useEffect(()=>{
+    // code to be executed
+},[])
