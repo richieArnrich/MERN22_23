@@ -30,7 +30,7 @@ function ViewProduct() {
               <img
                 src={product.image}
                 alt={product.title}
-                style={{ width: "50%" }}
+                style={{ width: "100%" }}
               />
             </div>
             <div className="col-md-6">
