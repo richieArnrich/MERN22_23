@@ -17,17 +17,22 @@ function ApiCall2() {
   if (products) {
     return (
       <div>
-        <h1>Making API call using useEffect</h1>
-        <h2>Products</h2>
+        <h1 className="text-center bg-success p-3">
+          Making API call using useEffect
+        </h1>
+        <h2 className="text-center">Products</h2>
         <div className="container">
           <div className="row">
             {products.map((product, index) => {
               return (
-                <div key={index} className="col-md-4">
-                  <div class="card" style={{ width: "18rem", height: "50%" }}>
+                <div key={index} className="col-md-4 my-2">
+                  <div
+                    class="card m-2"
+                    style={{ width: "20rem", height: "100%" }}
+                  >
                     <img
                       class="card-img-top"
-                      style={{ height: "auto" }}
+                      style={{ height: "50%" }}
                       src={product.image}
                       alt="Card image cap"
                     />
