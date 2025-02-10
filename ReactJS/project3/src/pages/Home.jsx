@@ -23,22 +23,22 @@ function Home() {
           {products &&
             products.map((product, index) => {
               return (
-                <div key={index} className="col-md-4 my-2">
-                  <Link to={`/viewproduct/${product.id}`}>
-                    <div
-                      class="card m-2"
-                      style={{ width: "20rem", height: "100%" }}
-                    >
-                      <img
-                        class="card-img-top"
-                        style={{ height: "50%" }}
-                        src={product.image}
-                        alt="Card image cap"
-                      />
-                      <div class="card-body">
-                        <h5 class="card-title">{product.title}</h5>
-                        <p class="card-text">{product.description}</p>
-                        <p className="text-success">Price: {product.price}</p>
+                <div key={index} className="col-md-12 my-1">
+                  <Link to={`/viewproduct/${product.id}`} id="link">
+                    <div class="d-flex p-3 border align-items-center">
+                      <div style={{ width: "20%" }}>
+                        <img
+                          src={product.image}
+                          alt="product"
+                          className="img-fluid"
+                        />
+                      </div>
+                      <div className="text-dark p-2" style={{ width: "100%" }}>
+                        <h4>{product.title}</h4>
+                        <p>Rating: {product.rating.rate}</p>
+                        <p>Reviews: {product.rating.count}</p>
+                        <h5>Price: ${product.price}</h5>
+                        <div className="btn btn-warning">Add to cart</div>
                       </div>
                     </div>
                   </Link>
