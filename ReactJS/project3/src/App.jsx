@@ -1,9 +1,10 @@
 import Layout from "./components/Layout";
+import PageRoutes from "./pages/PageRoutes";
 
 function App() {
   return (
     <>
-      <Layout />
+      <PageRoutes />
     </>
   );
 }
