@@ -11,16 +11,22 @@ function Header() {
     <div>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Link id="link">
-            <Navbar.Brand>My Store</Navbar.Brand>
-          </Link>
+          <Navbar.Brand>
+            <Link id="link" to="/">
+              My Store
+            </Link>
+          </Navbar.Brand>
           <Nav className="me-auto">
-            <Link id="link">
-              <Nav.Link>Home</Nav.Link>
-            </Link>
-            <Link id="link">
-              <Nav.Link>Insert Product</Nav.Link>
-            </Link>
+            <Nav.Link>
+              <Link id="link" to="/">
+                Home
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link id="link" to="/insert">
+                Insert Product
+              </Link>
+            </Nav.Link>
           </Nav>
         </Container>
       </Navbar>
