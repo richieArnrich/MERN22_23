@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import "./ApiStyles.css";
+
 class ApiCall extends Component {
   constructor(props) {
     super(props);
@@ -57,3 +58,7 @@ class ApiCall extends Component {
 }
 
 export default ApiCall;
+// Fallback UI
+// Routers
+// useEffect
+// HOC -- higher order components
