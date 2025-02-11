@@ -175,3 +175,51 @@ Syntax:
 useEffect(()=>{
     // code to be executed
 },[])
+
+------------------------------------------------------------------------
+React Router Dom
+------------------------------------------------------------------------
+What is react-router-dom?
+It provides routers to navigate through our react application
+It is used to navigate through our react application
+Components of react-router-dom
+- BrowserRouter
+- Routes
+- Route
+- Link
+- Navigate
+------------------------------------------------------------------------
+BrowserRouter
+It is the top level component of the router
+It is used to enable client side routing
+
+Routes
+It is used to define the routes of the application
+It is used to define the path of the route
+------------------------------------------------------------------------
+Route
+It is used to define the path of the route
+It is used to render the component when the route is matched
+------------------------------------------------------------------------
+Link
+It is used to navigate to the route
+------------------------------------------------------------------------
+Navigate
+It is used to navigate to the route
+------------------------------------------------------------------------
+
+Higher Order Components in React
+------------------------------------------------
+Higher Order Components (HOCs) are a design pattern in React that allows you to wrap a
+component with another component to extend its behavior without changing its source code.
+A HOC is a function that takes a component as an argument and returns a new component with
+additional props or behavior.
+
+Syntax:
+function withHOC(WrappedComponent) {
+    return function EnhancedComponent(props) {
+        return <WrappedComponent {...props} />;
+        }
+    }
+Eg: A click counter and a hover counter will use the same logic of incrementing counter
+but in different components
