@@ -30,6 +30,7 @@ function ViewProduct() {
                 src={product.image}
                 alt={product.title}
                 style={{ width: "100%" }}
+                
               />
             </div>
             <div className="col-md-8">
@@ -38,7 +39,8 @@ function ViewProduct() {
                 <p>{product.description}</p>
                 <p>Category : {product.category}</p>
                 <p>
-                  Rating : {product.rating.rate} of {product.rating.count}
+                  Rating : {product.rating.rate} | Reviews :{" "}
+                  {product.rating.count}
                 </p>
                 <h6>Price : Rs {product.price}</h6>
                 <button className="btn btn-secondary">Add to cart</button>

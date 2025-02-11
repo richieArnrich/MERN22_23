@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 function Home() {
   const [products, setProducts] = useState();
   useEffect(() => {
@@ -26,7 +27,10 @@ function Home() {
                 <div key={index} className="col-md-12 my-1">
                   <Link to={`/viewproduct/${product.id}`} id="link">
                     <div class="d-flex p-3 border align-items-center">
-                      <div style={{ width: "20%" }}>
+                      <div
+                        style={{ width: "20%" }}
+                        className="p-2 border-right"
+                      >
                         <img
                           src={product.image}
                           alt="product"
