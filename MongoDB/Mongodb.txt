@@ -4,13 +4,37 @@ MongoDB is a document-oriented database
 MongoDB is a schema-less database
 
 What is a collection?
-A collection is a group of documents in MongoDB
-A collection is a table in MongoDB (it tries to represent a table)
-A group of collections make up a database
+    A collection is a group of documents in MongoDB
+    A collection is a table in MongoDB (it tries to represent a table)
+    A group of collections make up a database
 
 What is a document?
-A document is a single unit of data in MongoDB
-A document is a JSON object in MongoDB
-A document is a collection of fields in MongoDB (represented in key:value format)
-A document is a row in MongoDB (it tries to represent a row)
+    A document is a single unit of data in MongoDB
+    A document is a JSON object in MongoDB
+    A document is a collection of fields in MongoDB (represented in key:value format)
+    A document is a row in MongoDB (it tries to represent a row)
 
+What makes mongodb a flexible schema?
+    MongoDB is a schema-less database
+    MongoDB does not require a predefined schema for the data
+    MongoDB allows for dynamic schema creation
+    We can add/remove the properties as required
+
+----------------------------------------------------------
+Aggregation Functions in Mongodb
+----------------------------------------------------------
+    Aggregation is a process of combining multiple documents into a single document
+    Aggregation is a process of transforming data from one format to another
+    Aggregation is a process of grouping data by one or more fields
+    Aggregation is a process of applying various operations on the data
+    Aggregation is a process of filtering data based on certain conditions
+
+Stages of aggregation functions:
+1. $match: This stage filters the documents based on a condition
+2. $project: This stage selects the fields to be included in the output
+3. $group: This stage groups the documents based on one or more fields
+4. $sort: This stage sorts the documents based on one or more fields
+5. $limit: This stage limits the number of documents in the output
+6. $lookup: This stage joins two collections based on a common field
+7. $unwind: This stage unwinds an array field into separate documents
+-----------------------------------------------------------------------------------
