@@ -1,0 +1,16 @@
+Mongodb is a database where the data is stored in the form of collection and documents
+MongoDB is a NoSQL database
+MongoDB is a document-oriented database
+MongoDB is a schema-less database
+
+What is a collection?
+A collection is a group of documents in MongoDB
+A collection is a table in MongoDB (it tries to represent a table)
+A group of collections make up a database
+
+What is a document?
+A document is a single unit of data in MongoDB
+A document is a JSON object in MongoDB
+A document is a collection of fields in MongoDB (represented in key:value format)
+A document is a row in MongoDB (it tries to represent a row)
+
