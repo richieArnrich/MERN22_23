@@ -1,0 +1,56 @@
+Node js is a javascript runtime environment
+- Node js is used for server-side programming
+- Node js is used for creating web applications
+- It uses chromes v8 engine to compile javascript code
+
+Setting up the nodejs project
+=====================================
+- Create a new folder for the project
+- Open the terminal and navigate to the project folder
+- Commands to execute:
+    - npm init -y (to create a package.json file)
+    - to install any package npm instal package_name
+    - to run the project node file_name
+
+=======================================
+### Modules in nodejs
+=======================================
+- Modules are used to organize code
+- Modules are blocks of code that can reused in other files/folders
+- Modules are used to avoid code duplication
+- Modules are used to make the code more readable and maintainable
+- To import modules use the require()
+- To export modules use the module.exports = {module_name} or exports = {module_name}
+- If we want to use import statement for modules, set "type": "module" in your package. json file.
+
+Types of modules:
+================
+- Built-in modules: These are modules that are provided by nodejs itself. Examples include http,
+fs, path, etc.
+- Third-party modules: These are modules that are not provided by nodejs itself. Examples include express
+mongodb, cors etc
+- Custom modules: These are built by programmers
+=======================================
+
+File System module(fs) in nodejs
+=====================================
+- The fs module is used to interact with the file system
+- It provides methods to read and write files
+- It provides methods to create and delete files and directories
+- It provides methods to check if a file or directory exists
+- It provides methods to get the information of a file or directory
+- It provides methods to set the permissions of a file or directory
+-------------------------------------
+Writing into a file:
+================
+- fs.writeFile(filename, data, callback)
+- fs.writeFileSync(filename, data)
+- fs.appendFile(filename, data, callback)
+- fs.appendFileSync(filename, data)
+=====================================
+=====================================
+Read from a file
+================
+- fs.readFile(filename, callback)
+- fs.readFileSync(filename)
+=====================================
