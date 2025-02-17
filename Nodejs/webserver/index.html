@@ -45,7 +45,8 @@
             const tableBody = document.getElementById("employeeTable");
             data.forEach((employee) => {
               const row = document.createElement("tr");
-              row.innerHTML = `<td>${employee.id}</td><td>${employee.name}</td><td>${employee.role}</td>`;
+              row.innerHTML =
+               `<td>${employee.id}</td><td>${employee.name}</td><td>${employee.role}</td>`;
               tableBody.appendChild(row);
             });
           })

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 50%;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      tr,
+      td,
+      th {
+        border: 1px solid black;
+        text-align: center;
+      }
+      th {
+        background-color: gray;
+        color: white;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      tr:nth-child(odd) {
+        background-color: lightgoldenrodyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Express JS users</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <!-- dynamic data -->
+      </tbody>
+    </table>
+    <h2>Fetch single user</h2>
+    <form>
+      <input
+        type="text"
+        id="userID"
+        name="userID"
+        placeholder="enter user id"
+      />
+      <input type="submit" onclick="getSingleUser()" />
+      <div
+        id="single-user"
+        style="
+          display: flex;
+          height: 250px;
+          width: 50%;
+          justify-content: space-between;
+        "
+      >
+        <div id="profile-pic"></div>
+        <div id="details"></div>
+      </div>
+    </form>
+    <script>
+      let tbody = document.getElementById("tbody");
+      fetch("http://localhost:5000/users")
+        .then((res) => res.json())
+        .then((res) => displayTable(res))
+        .catch((err) => console.log(err));
+
+      function displayTable(res) {
+        for (let user of res) {
+          let row = document.createElement("tr");
+          let id = document.createElement("td");
+          let name = document.createElement("td");
+          let age = document.createElement("td");
+          id.innerHTML = user.id;
+          name.innerHTML = user.name;
+          age.innerHTML = user.age;
+          row.appendChild(id);
+          row.appendChild(name);
+          row.appendChild(age);
+          tbody.appendChild(row);
+        }
+      }
+
+      function getSingleUser() {
+        let userID = document.getElementById("userID").value;
+        fetch(`http://localhost:5000/users/${userID}`)
+          .then((res) => res.json())
+          .then((res) => displaySingleUser(res))
+          .catch((err) => console.log(err));
+        event.preventDefault();
+      }
+
+      function displaySingleUser(user) {
+        console.log(user);
+        let profilePic = document.getElementById("profile-pic");
+        let details = document.getElementById("details");
+        let id = document.createElement("p");
+        let username = document.createElement("p");
+        let age = document.createElement("p");
+        id.innerHTML = user.id;
+        username.innerHTML - user.name;
+        age.innerHTML = user.age;
+        details.appendChild(id);
+        details.appendChild(username);
+        details.appendChild(age);
+        let img = document.createElement("img");
+        img.style.height = "250px";
+        img.src = user.image;
+        profilePic.appendChild(img);
+      }
+    </script>
+  </body>
+</html>

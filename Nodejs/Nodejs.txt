@@ -54,3 +54,27 @@ Read from a file
 - fs.readFile(filename, callback)
 - fs.readFileSync(filename)
 =====================================
+=====================================
+### Expressjs
+=====================================
+- Expressjs is a popular web framework for nodejs
+- It provides a lot of features out of the box
+- It provides a lot of middleware functions to handle requests and responses
+- It provides a lot of methods to handle routes
+- It provides a lot of methods to handle templates (html files)
+- It provides a lot of methods to handle static files
+
+---------------------------------------
+    Authentication on Expressjs
+    =====================================
+    - We can use middleware functions to authenticate users
+    - Use the package called bcrypt to handle authentication (advanced)
+    - Use the package called jsonwebtoken to handle authentication (advanced)
+    =====================================
+    We can create cookies using jwt(jsonwebtoken)
+    =====================================
+    What are cookies?
+    ================
+    - Cookies are small pieces of data that are stored on the client's browser
+    - They are used to store information about the user logged in
+    - They are used to store information about the user's preferences
