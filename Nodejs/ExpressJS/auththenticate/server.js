@@ -1,9 +1,17 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const userRoutes = require("./routes/userRoutes.js");
+const path = require("path");
+
 const app = express();
 // all communication happens with json
 app.use(express.json());
+
+// set ejs engine
+app.set("view engine", "ejs");
+app.use(express.static("public"));
+// set path of index.ejs
+app.set("views", path.join(__dirname, "views"));
 
 const connect = async () => {
   try {
@@ -15,7 +23,8 @@ const connect = async () => {
 };
 
 app.get("/", (req, res) => {
-  res.status(200).json({ message: "API working" });
+  // modify to render ejs file
+  res.render("index");
 });
 
 app.use("/users", userRoutes);

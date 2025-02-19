@@ -7,6 +7,12 @@ const userSchema = require("../models/users.js");
 // create a jwt secret key
 const secretKey = "qwerty@123";
 
+router.use(express.static("public"));
+
+router.get("/register", (req, res) => {
+  res.render("register");
+});
+
 router.post("/createUser", async (req, res) => {
   console.log(req.body);
   const { username, email, password, address, contact, gender } = req.body;
@@ -57,4 +63,18 @@ router.post("/login", async (req, res) => {
   }
 });
 
+// create a route to render view.ejs
+router.get("/view", (req, res) => {
+  res.render("view");
+});
+
+// create a route to fetch all registered users
+router.get("/getAllUsers", async (req, res) => {
+  try {
+    const users = await userSchema.find();
+    res.json({ status: 200, data: users });
+  } catch (err) {
+    res.json({ status: 500, message: "something went wrong", err });
+  }
+});
 module.exports = router;

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Registered Users</h1>
+    <table id="table">
+      <thead>
+        <tr>
+          <th>UserName</th>
+          <th>Email</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <script>
+      let table = document.getElementById("table");
+      let tbody = document.getElementById("tbody");
+      table.style.display = "none";
+      let users = [];
+      fetch("/users/getAllUsers")
+        .then((res) => res.json())
+        .then((res) => {
+          users = res.data;
+          console.log(res.data);
+          displayTable(users);
+        })
+        .catch((err) => console.log(err));
+
+      function displayTable(users) {
+        table.style.display = "block";
+        users.map((user) => {
+          let row = document.createElement("tr");
+          let userName = document.createElement("td");
+          let email = document.createElement("td");
+          let address = document.createElement("td");
+          userName.innerHTML = user.username;
+          email.innerHTML = user.email;
+          address.innerHTML = user.address;
+          row.appendChild(userName);
+          row.appendChild(email);
+          row.appendChild(address);
+          tbody.appendChild(row);
+        });
+      }
+    </script>
+  </body>
+</html>

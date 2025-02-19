@@ -78,3 +78,36 @@ Read from a file
     - Cookies are small pieces of data that are stored on the client's browser
     - They are used to store information about the user logged in
     - They are used to store information about the user's preferences
+---------------------------------------------------------------------------------------
+Template Engines:
+================
+- We can use template engines to render html files
+- We can use templates to renders static files (images/styles etc..)
+- We can use templates to render dynamic data (data from database)
+- The types of template engines are:
+    - EJS (Embedded JavaScript) -> it has syntax similar to html and coding into express js is simple
+    - Pug (formerly Jade)
+    - Handlebars
+    - Mustache
+    - Nunjucks
+=====================================
+Steps to configure template engine(ejs) into express js server
+=====================================
+1. Install ejs package
+2. Create a new file called index.ejs
+3. Create the new file in a folder called views
+4. Create a new file called index.js(server.js)
+5. Import ejs package in index.js
+6. Use the ejs.renderFile() method to render the index.ejs file
+or
+7. Use the res.render() method to render the index.ejs file
+---------------------
+Set up views in express js server
+=====================================
+1. Create a new folder called views
+2. in server.js write the following code:
+app.use(express.static('public'))
+app.set('views', path.join(__dirname, 'views'))
+
+public is the folder which stores styles and images
+views is the folder which stores ejs files
