@@ -1,0 +1,84 @@
+Question 1:
+Which of the following is the correct way to declare a function in C?
+a. int function();
+b. function int();
+c. int function[];
+d. function int[];
+Answer: a. int function();
+
+Question 2:
+What is the default value of an uninitialized local variable in C?
+a. 0
+b. NULL
+c. Undefined
+d. Garbage value
+Answer: d. Garbage value
+
+Question 3:
+Which of the following operators is used to compare two values in C?
+a. ==
+b. =
+c. !=
+d. Both a and c
+Answer: d. Both a and c
+
+Question 4:
+Which of the following will be printed by the following C code?
+#include <stdio.h>
+int main() {
+    printf("%d\n", 5 + 10 * 2);
+    return 0;
+}
+a. 30
+b. 25
+c. 15
+d. 20
+Answer: b. 25
+
+Question 5:
+What does the sizeof operator do in C?
+a. It gives the address of the variable
+b. It gives the size of the variable in bytes
+c. It gives the value of the variable
+d. It is used to compare two variables
+Answer: b. It gives the size of the variable in bytes
+
+Question 6:
+Which of the following is the correct representation of a singly linked list node?
+a. struct Node { int data; struct Node *next; };
+b. struct Node { int data; struct Node *prev; };
+c. struct Node { int data; struct Node *next, *prev; };
+d. struct Node { int data; };
+Answer: a. struct Node { int data; struct Node *next; };
+
+Question 7:
+What is the time complexity of inserting an element at the beginning of a singly linked list?
+a. O(1)
+b. O(n)
+c. O(log n)
+d. O(n log n)
+Answer: a. O(1)
+
+Question 8:
+Which of the following is true for a stack implemented using a linked list?
+a. Insertion and deletion operations are O(n)
+b. We can access elements in any order
+c. We can access the top element in O(1) time
+d. Stack cannot be implemented using a linked list
+Answer: c. We can access the top element in O(1) time
+
+Question 9:
+Which of the following sorting algorithms has the best average case performance?
+a. Selection Sort
+b. Bubble Sort
+c. Merge Sort
+d. Insertion Sort
+Answer: c. Merge Sort
+
+Question 10:
+What is the space complexity of the recursive quicksort algorithm?
+a. O(1)
+b. O(n)
+c. O(log n)
+d. O(n log n)
+Answer: c. O(log n)
